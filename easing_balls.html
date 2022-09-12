@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easing</title>
+  <style>
+    body{
+      background-color: azure;
+    }
+    .circle1{
+      margin: 100px 400px;
+      width: 50px;
+      height: 50px;
+      background-color:coral;
+      border-radius: 50%;
+      border: 0px;
+      animation: easing1 3s infinite alternate ease-in-out;
+    }
+    @keyframes easing1{
+        0%{
+        transform: translatey(0);
+        }
+        25%{
+        transform: translatey(300px);
+        }
+        50%{
+        transform: translatey(100px);
+        }
+        75%{
+        transform: translatey(500px);
+        }
+        100%{
+        transform: translatey(0px);
+        }
+      }
+
+    .circle2{
+      margin: 0px 100px;
+      width: 50px;
+      height: 50px;
+      background-color:rgb(253, 177, 152);
+      border-radius: 50%;
+      border: 0px;
+      animation: easing2 2.5s infinite alternate ease-in-out;
+    }
+    @keyframes easing2{
+        0%{
+        transform: translatey(0px);
+        }
+        30%{
+        transform: translatey(-170px);
+        }
+        60%{
+        transform: translatey(300px);
+        }
+        100%{
+        transform: translatey(-100px);
+        }
+      }
+    .circle3{
+      margin: 0px 700px;
+      width: 50px;
+      height: 50px;
+      background-color:rgb(253, 118, 69);
+      border-radius: 50%;
+      border: 0px;
+      animation: easing3 3s infinite ease-in-out;
+    }
+    @keyframes easing3{
+        0%{
+        transform: translatey(0px);
+        }
+        30%{
+        transform: translatey(-120px);
+        }
+        60%{
+        transform: translatey(400px);
+        }
+        80%{
+        transform: translatey(-200px);
+        }
+        100%{
+        transform: translatey(0px);
+        }
+      }
+    .circle4{
+      margin: 0px 300px;
+      width: 50px;
+      height: 50px;
+      background-color:rgb(252, 78, 15);
+      border-radius: 50%;
+      border: 0px;
+      animation: easing4 2s infinite ease-in-out;
+    }
+    @keyframes easing4{
+        0%{
+        transform: translatey(0px);
+        }
+        40%{
+        transform: translatey(220px);
+        }
+        70%{
+        transform: translatey(-200px);
+        }
+        100%{
+        transform: translatey(0px);
+        }
+      }
+    .circle5{
+    margin: -100px 600px;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(252, 226, 218);
+    border-radius: 50%;
+    border: 0px;
+    animation: easing5 3s infinite alternate ease-in-out;
+    }
+    @keyframes easing5{
+        0%{
+        transform: translatey(0px);
+        }
+        40%{
+        transform: translatey(-220px);
+        }
+        70%{
+        transform: translatey(400px);
+        }
+        100%{
+        transform: translatey(0px);
+        }
+      }
+
+    
+  </style>
+</head>
+<body>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+  <div class="circle3"></div>
+  <div class="circle4"></div>
+  <div class="circle5"></div>
+</body>
+</html>
